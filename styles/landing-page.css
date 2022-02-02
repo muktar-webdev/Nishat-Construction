@@ -1,0 +1,415 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---Header Start --- */
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(10, 11, 54, 0.233),
+      rgba(31, 2, 6, 0.719)
+    ),
+    url(../images/banners/b-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  padding: 10px 0px;
+}
+/* ---Topbar-- */
+.header h3 {
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.header ul {
+  margin-left: auto;
+  margin-right: 5%;
+}
+.header ul li a {
+  font-weight: 500;
+  color: white !important;
+}
+.header ul .active {
+  color: #f0542d !important ;
+}
+
+/* --Content-- */
+.header-content-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .header-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.header-content h2 {
+  color: white;
+  margin-bottom: 60px;
+  font-size: 3rem;
+}
+.header-content .btn {
+  margin-left: 4%;
+  height: 60px;
+  width: 200px;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  color: white;
+}
+.header-content .btn-1 {
+  background: #f0542d;
+}
+.header-content .btn-1:hover {
+  background: black;
+}
+.header-content .btn-2 {
+  border: 2px solid white;
+}
+/* ---Header End--- */
+
+/* ---About Start--- */
+.about {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.about h1 {
+  position: relative;
+  margin-bottom: 40px;
+}
+.about h6 {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+.about p {
+  text-align: justify;
+}
+.about img {
+  width: 95%;
+  height: 100%;
+  /* margin-left: 30px; */
+  display: block;
+  margin: 0 auto;
+}
+.about .btn {
+  height: 55px;
+  width: 200px;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  color: white;
+  background: #f0542d;
+  margin-top: 18px;
+}
+@media all and (max-width: 600px) {
+  .about h1 {
+    text-align: center;
+  }
+  .btn{
+    margin: 0.5rem 0rem;
+  }
+  
+}
+/* ---About End--- */
+
+/* ---Industries Start--- */
+.industries {
+  background: #f1f4fc;
+  padding: 90px 0px;
+}
+.industries .card {
+  border: none;
+  background: none;
+  padding: 20px 0px;
+  margin: 0px 0px;
+}
+.industries .card img {
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+}
+.industries .card h5 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.industries .card p {
+  text-align: center;
+}
+/* ---Industries End--- */
+
+/* ---Production Start--- */
+.production {
+  margin-top: -30px;
+  padding: 50px 0px;
+}
+.production .container .row {
+  margin: 60px 0px;
+}
+.production h1 {
+  padding: 30px 0px;
+}
+.production .card {
+  border: none;
+  background: none;
+  padding: 30px 0px;
+}
+.production .card h4 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.production .card h4:hover {
+  color: #f0542d;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.production .card p {
+  text-align: center;
+}
+.production .card img {
+  /* width: 50%; */
+  display: block;
+  margin: 30px auto;
+  border-radius: 3px;
+}
+.production .btn {
+  height: 55px;
+  width: 200px;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  color: white;
+  background: #f0542d;
+  text-align: center;
+  margin: auto;
+}
+/* ---Production End--- */
+
+/* ---Product Start--- */
+.product {
+  margin-top: 50px 0px;
+  position: relative;
+}
+.product .row .bg-col {
+  background: #00000071;
+  padding: 50px 10px;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+}
+.product .row .bg-col-1 {
+  background-image: url(../images/banners/construction-instrument-1.jpg);
+}
+.product .row .bg-col-2 {
+  background-image: url(../images/banners/construction-instrument-2.jpg);
+}
+.product .row .bg-col-3 {
+  background-image: url(../images/banners/construction-instruments-3.jpg);
+}
+.product .row .bg-col-4 {
+  background-image: url(../images/banners/construction-instrument-4.jpg);
+}
+.product .row .bg-col p {
+  color: white;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+.product .row .bg-col h3 {
+  color: #f0542d;
+  text-align: left;
+  margin-left: 20px;
+}
+.product .row .bg-col h3:hover {
+  color: white;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+/* ---Product End--- */
+
+/* ---User Feedback Start --- */
+.user-feedback {
+  margin: 60px;
+  padding: 30px 30px;
+}
+.user-feedback h1 {
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+.user-feedback p {
+  margin-bottom: 10px;
+}
+.user-feedback .row {
+  margin-top: 70px;
+}
+.user-feedback .col-md-4 {
+  padding: 20px 20px;
+}
+.user-feedback .col-md-4 p {
+  background: white;
+  text-align: justify;
+  font-size: 13px;
+  padding: 30px 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.user-feedback .col-md-4 p i,
+span {
+  color: #1e8fffdc;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.user-feedback img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: -35px;
+  margin-left: -15px;
+}
+
+@media all and (max-width: 600px) {
+  .user-feedback .col-md-4 p {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .user-feedback .col-up {
+    margin-top: -40px;
+  }
+}
+/* ---User Feedback End --- */
+
+/* ---Footer Start--- */
+.footer {
+  background: black;
+  padding: 30px 0px;
+  color: white;
+}
+
+.footer > div > div > div {
+  position: relative;
+  font-size: 16px;
+}
+.footer h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.footer h3::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  width: 3px;
+  height: 32px;
+  background: #f0542d;
+  z-index: 10;
+  margin-left: 10px;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer span {
+  color: white;
+  margin-left: 5px;
+}
+
+.footer .col-style-2 li {
+  margin-left: -30px;
+  margin-top: 10px;
+}
+.footer .col-style-2 li i {
+  margin-right: 12px;
+}
+.footer .col-style-2 li a:hover {
+  color: #f0542d;
+}
+
+.footer .col-style-3 h3 {
+  margin-left: 50px;
+}
+.footer .col-style-3 li {
+  margin-left: 18px;
+  margin-top: 10px;
+}
+.footer .col-style-3 li a {
+  color: #f0542d;
+}
+
+.footer .col-style-4 input {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+}
+.footer .col-style-4 .btn {
+  background: #f0542d;
+  color: white;
+  height: 50px;
+}
+.footer .col-style-4 .btn:hover {
+  background: black;
+}
+
+.footer .social {
+  margin-top: 20px;
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .social ul {
+  display: flex;
+}
+.footer .social li a {
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.footer .social li a:hover {
+  color: #f0542d;
+}
+
+@media all and (max-width: 600px) {
+  .footer h3 {
+    text-align: center;
+  }
+  .footer h3::before {
+    content: "";
+    position: absolute;
+    left: -0.5rem;
+    width: 3px;
+    height: 32px;
+    background: #f0542d;
+    z-index: 10;
+    margin-left: 10px;
+  }
+  .footer .col-lg-3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .footer .col-style-2 {
+    width: 50%;
+    /* margin-left: 10px; */
+  }
+  .footer .col-style-3 {
+    width: 50%;
+  }
+  .footer .col-style-3 h3 {
+    text-align: left;
+  }
+}
+/* ---Footer End--- */

@@ -1,0 +1,379 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---Root Style--- */
+.btn-style {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: #f0542d;
+  color: white;
+  margin-top: 10px;
+}
+.btn-style:hover {
+  background: black;
+  transition: all 0.5s linear;
+}
+
+p {
+  text-align: justify;
+  color: grey;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 30px !important;
+  position: relative;
+}
+
+/* ---Header Start --- */
+#header {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(10, 11, 54, 0.233),
+      rgba(31, 2, 6, 0.719)
+    ),
+    url(../images/banners/b-4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  padding: 10px 0px;
+}
+/* ---Topbar-- */
+.header h3 {
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.header ul {
+  margin-left: auto;
+  margin-right: 5%;
+}
+.header ul li a {
+  font-weight: 500;
+  color: white !important;
+}
+.header ul .active {
+  color: #f0542d !important ;
+}
+
+/* --Content-- */
+.header-content {
+  margin-top: 18%;
+  color: white;
+}
+.header-content h1 {
+  position: relative;
+  font-size: 70px;
+}
+.header-content h1::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 70px;
+  background: #f0542d;
+  z-index: 1;
+  left: -5%;
+  top: 0.65rem;
+}
+.header-content p {
+  margin-top: 100px;
+  font-size: 1.2rem;
+}
+.header-content p span {
+  color: #f0542d;
+}
+
+@media all and (max-width: 600px) {
+  .header-content h1 {
+    font-size: 40px;
+    margin-left: 11%;
+  }
+  .header-content h1::before {
+    height: 50px;
+    top: 0;
+  }
+  .header-content p {
+    margin-left: 6.2%;
+  }
+}
+
+/* ---Header End--- */
+
+/* ---About Start--- */
+.about {
+  margin: 100px 0px;
+}
+.about .col-lg-6 {
+  padding: 30px 0px;
+}
+.about .h2 {
+  position: relative;
+}
+.about h2::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background: #f0542d;
+  z-index: 1;
+  left: -5%;
+  top: 0.2rem;
+}
+
+/* --Progressbar--- */
+.progressbar {
+  margin-left: 10%;
+  padding-top: 10%;
+}
+.progressbar h6 {
+  color: grey;
+}
+.progressbar .progress {
+  margin: 20px 0px;
+  border-radius: 0;
+}
+
+@media all and (max-width: 600px) {
+  .about h2 {
+    margin-left: 5%;
+    text-align: center;
+  }
+  .about h2::before {
+    top: -2%;
+  }
+  .progressbar {
+    margin-left: 0%;
+    margin-top: 5%;
+  }
+}
+
+/* ---About End--- */
+
+/* --Approach Start-- */
+.approach {
+  background: #f1f4fc;
+}
+.approach .row {
+  padding: 10% 0px;
+}
+.approach .row > div {
+  margin: 0 4%;
+}
+.approach h2 {
+  position: relative;
+  margin-left: 5%;
+}
+.approach h2::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 40px;
+  background: #f0542d;
+  z-index: 1;
+  left: -5%;
+  top: 0.2rem;
+}
+.approach img {
+  width: 100%;
+  /* height:100%; */
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 600px) {
+  .approach .row > div {
+    margin: 5% 0;
+  }
+  .approach h2 {
+    text-align: center;
+  }
+}
+/* --Approach End-- */
+
+/* --History Start-- */
+.history {
+  padding: 8% 0;
+}
+.history h2 {
+  position: relative;
+  font-weight: bold;
+}
+.history h2::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 40px;
+  background: #f0542d;
+  z-index: 1;
+  left: -5%;
+  top: 0.2rem;
+}
+.history p {
+  margin-bottom: 10%;
+}
+.history span {
+  margin-left: 2%;
+}
+
+.history .img {
+  height: 80%;
+  margin-left: 10%;
+}
+.history .img img {
+  border-top-width: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 600px) {
+  .history h2 {
+    margin-left: 5%;
+    text-align: center;
+  }
+  .history .img {
+    margin: 5% 0;
+  }
+  .history .img {
+    margin-left: 0%;
+  }
+  .history .img img {
+    width: 100%;
+  }
+}
+/* --History End-- */
+
+/* ---Footer Start--- */
+.footer {
+  background: black;
+  padding: 30px 0px;
+  color: white;
+}
+
+.footer > div > div > div {
+  position: relative;
+  font-size: 16px;
+}
+.footer h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+.footer h3::before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  width: 3px;
+  height: 32px;
+  background: #f0542d;
+  z-index: 10;
+  margin-left: 10px;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.footer span {
+  color: white;
+  margin-left: 5px;
+}
+
+.footer .col-style-2 li {
+  margin-left: -30px;
+  margin-top: 10px;
+}
+.footer .col-style-2 li i {
+  margin-right: 12px;
+}
+.footer .col-style-2 li a:hover {
+  color: #f0542d;
+}
+
+.footer .col-style-3 h3 {
+  margin-left: 50px;
+}
+.footer .col-style-3 li {
+  margin-left: 18px;
+  margin-top: 10px;
+}
+.footer .col-style-3 li a {
+  color: #f0542d;
+}
+
+.footer .col-style-4 input {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none;
+}
+.footer .col-style-4 .btn {
+  background: #f0542d;
+  color: white;
+  height: 50px;
+}
+.footer .col-style-4 .btn:hover {
+  background: black;
+}
+
+.footer .social {
+  margin-top: 20px;
+  padding: 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .social ul {
+  display: flex;
+}
+.footer .social li a {
+  margin: 0px 10px;
+  font-size: 20px;
+}
+.footer .social li a:hover {
+  color: #f0542d;
+}
+
+@media all and (max-width: 600px) {
+  .footer h3 {
+    text-align: center;
+  }
+  .footer h3::before {
+    content: "";
+    position: absolute;
+    left: -0.5rem;
+    width: 3px;
+    height: 32px;
+    background: #f0542d;
+    z-index: 10;
+    margin-left: 10px;
+  }
+  .footer .col-lg-3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .footer .col-style-2 {
+    width: 50%;
+    /* margin-left: 10px; */
+  }
+  .footer .col-style-3 {
+    width: 50%;
+  }
+  .footer .col-style-3 h3 {
+    text-align: left;
+  }
+}
+/* ---Footer End--- */
